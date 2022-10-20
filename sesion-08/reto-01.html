@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta charset="utf8" />
+    <title>Reto 1: Inflar un globo</title>
+  </head>
+  <body>
+
+    <p id="idp">🎈</p>
+    
+
+    <script>
+      // Code goes here
+        window.addEventListener("keydown",function (event) {
+            event.preventDefault();
+            console.log(event);
+            var varP = document.getElementById("idp");
+            if (event.key=="ArrowUp"){
+                varP.style.fontSize +=   "20px";
+            }
+            if (event.key=="ArrowDown"){
+                varP.style.fontSize -= "10";
+            }
+            console.log(varP.style.fontSize);
+        })
+
+    </script>
+  </body>
+</html>

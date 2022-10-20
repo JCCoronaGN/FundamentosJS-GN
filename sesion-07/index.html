@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sesión 02 - Programación con JS</title>
+    
+    </head>
+    <body style="background-color:#a39999">
+        <h1 id="myElement">Document Object Model</h1>
+        <p  class="main">Hello Word</p>
+        <p>Here is
+            <a id="link" href="#">link</a>
+        </p>
+
+        <p>Hola</p>
+        <p>Mundo</p>
+
+
+        <script type="text/javascript" src="./sesion7.js"></script>
+        <script>
+            var elementos = document.getElementsByTagName("p");
+            console.log(elementos);
+            for (const key in elementos) {
+                if (Object.hasOwnProperty.call(elementos, key)) {
+                    console.log(key);
+                }
+            }
+            console.log(elementos);
+        </script>
+    </body>
+</html>
